@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "863212448363",
+    "firebase_url": "https://eshtr-d3559.firebaseio.com",
+    "project_id": "eshtr-d3559",
+    "storage_bucket": "eshtr-d3559.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863212448363:android:2f6b3731f18eca7efd1f2e",
+        "android_client_info": {
+          "package_name": "mstoreapp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863212448363-mfpvn1g7ed805tlujqom84eb3rkq5vl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDlJ69NNLbWBDlikaOL1qpxTcR2n8zMJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863212448363-mfpvn1g7ed805tlujqom84eb3rkq5vl9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

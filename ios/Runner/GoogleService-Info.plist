@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>863212448363-t8gqnneml5ubbnv3ifefe58k55h42otp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.863212448363-t8gqnneml5ubbnv3ifefe58k55h42otp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBO9pBjyOYcB9-qSvNb0F4oN0L1o-RXLBU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>863212448363</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mstoreapp.app</string>
+	<key>PROJECT_ID</key>
+	<string>eshtr-d3559</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eshtr-d3559.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:863212448363:ios:0d11ba1d54db1c8bfd1f2e</string>
+	<key>DATABASE_URL</key>
+	<string>https://eshtr-d3559.firebaseio.com</string>
+</dict>
+</plist>
