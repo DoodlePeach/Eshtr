@@ -111,39 +111,55 @@ class _MyAppState extends State<MyApp> {
                       : GalleryThemeData.darkThemeData.copyWith(
                           platform: GalleryOptions.of(context).platform,
                         ),
-                  home: ScopedModelDescendant<AppStateModel>(
-                      builder: (context, child, model) {
-                        if (model.blocks != null && _start == 0) {
-                          return App(); /*ShrineApp()*/
-                        }
+                  home: FutureBuilder(
+                    future: waitTimerForSplash(),
+                    builder: (context, snapshot){
+                      if(snapshot.hasData){
+                        return ScopedModelDescendant<AppStateModel>(
+                            builder: (context, child, model) {
 
-                        else{
-                          return Material(
-                            child: Stack(
-                              children: [
-                                Container(
-                                    padding: EdgeInsets.symmetric(vertical: 0, horizontal: 15 ),
-                                    height: MediaQuery.of(context).size.height,
-                                    child: Center(child: Image.asset('assets/icons/logo.jpg'))),
-                                model.blocks != null
-                                    ? Positioned(
-                                  top: 20,
-                                  right: 20,
-                                  child: FlatButton(
-                                    child: Text('SKIP 0' + _start.toString()),
-                                    onPressed: () => cancelTimer(),
-                                  ),
-                                )
-                                    : Container()
-                              ],
-                            ),
-                          );
-                        }
-                  })));
+                                if (model.blocks != null && _start == 0) {
+                                  return App(); /*ShrineApp()*/
+                                }
+
+                                else{
+                                  return Material(
+                                    child: Stack(
+                                      children: [
+                                        Container(
+                                            padding: EdgeInsets.symmetric(vertical: 0, horizontal: 15 ),
+                                            height: MediaQuery.of(context).size.height,
+                                            child: Center(child: Image.asset('assets/icons/logo.jpg'))),
+                                        model.blocks != null
+                                            ? Positioned(
+                                          top: 20,
+                                          right: 20,
+                                          child: FlatButton(
+                                            child: Text('SKIP 0' + _start.toString()),
+                                            onPressed: () => cancelTimer(),
+                                          ),
+                                        )
+                                            : Container()
+                                      ],
+                                    ),
+                                  );
+                                }
+                              });
+                      }
+
+                      else{
+                        return Container(child: Image.asset('assets/splash.jpg', fit: BoxFit.fill),);
+                      }
+                    }
+
+                  ),
+                  ));
         },
       ),
     );
   }
+
+  Future<int> waitTimerForSplash() => Future.delayed(Duration(seconds: 3), (){return 1;});
 
   void startTimer() {
     const oneSec = const Duration(seconds: 1);
