@@ -124,7 +124,7 @@ class _MyAppState extends State<MyApp> {
                                 Container(
                                     padding: EdgeInsets.symmetric(vertical: 0, horizontal: 15 ),
                                     height: MediaQuery.of(context).size.height,
-                                    child: Center(child: Image.asset('assets/icons/logo.jpeg'))),
+                                    child: Center(child: Image.asset('assets/icons/logo.jpg'))),
                                 model.blocks != null
                                     ? Positioned(
                                   top: 20,

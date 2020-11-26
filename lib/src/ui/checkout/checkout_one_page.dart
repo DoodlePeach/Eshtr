@@ -356,7 +356,7 @@ class _CheckoutOnePageState extends State<CheckoutOnePage> {
   void orderDetails(OrderResult orderResult) {
     String str = orderResult.redirect;
     int pos1 = str.lastIndexOf("/order-received/");
-    int pos2 = str.lastIndexOf("/?key=wc_order");
+    int pos2 = str.lastIndexOf("?key=wc_order");
     var orderId = str.substring(pos1 + 16, pos2);
     Navigator.push(
         context,
